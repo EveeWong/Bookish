@@ -12,6 +12,7 @@ namespace Bookish.Controllers
     [Route("book")]
     public class BookController : Controller
     {
+        // [HttpGet("Book")]
         public IActionResult Book()
         {
             var exampleBook = new Book() 
