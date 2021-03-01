@@ -53,12 +53,6 @@ namespace Bookish
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllerRoute(
-                    name: "book",
-                    pattern: "{controller=Book}/{action=Book}/{id?}");
-            });
         }
     }
 }

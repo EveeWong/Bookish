@@ -9,6 +9,7 @@ using Bookish.Models;
 
 namespace Bookish.Controllers
 {
+    [Route("book")]
     public class BookController : Controller
     {
         public IActionResult Book()

@@ -28,19 +28,6 @@ namespace Bookish.Controllers
             return View();
         }
 
-        public IActionResult Book()
-        {
-            var exampleBook = new Book() 
-            {
-                BookId = 1,
-                Title = "Convenience Store Woman",
-                Author = "Sayaka Murata",
-                Year = 2016
-            };
-            
-            return View(exampleBook);
-        }
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
